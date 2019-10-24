@@ -1,2 +1,10 @@
 # GE1-Assignment-GenaMaze
-A Unity Project that uses Procedural Generation to create a Maze that the user can then attempt to escape with First Person Gameplay
+###A Unity Project that uses Procedural Generation to create a Maze that the user can then attempt to escape with First Person Gameplay
+
+The Goal of this project is to create a program in Unity that will allow the Procedural Genertion of 3D mazes, a scenario where the user can watch the maze being built before their eyes, and then actually step into and explore the brand new maze in a First Person Perspective.
+As I plan to make use of Procedural Generation in a similar context for my Final Year Project, this seemed like the perfect test run to get familiar with Procedural Generaction concepts, and experience the ups and downs of their implementation. 
+Procedurally Generated mazes are hardly a new concept, and based on my research on the topic thus far I've found what appears to be the perfect method for their implementation in Unity. 
+An algorithm known as the "Hunt and Kill" Algorithm achieves the goal of Procedural Maze Generation, by first instansiating a grid (For example: a 10x10 Grid), and then "Hunting through the Grid by choosing a starting point and then knocking down either the North, South, East or West wall in a given cell in the grid, in order to traverse a path from the start point. The hunting ends when the path taken by the Algorithm leads it to loop back on itself through ground already covered, causing the algoritgm to reset to the top of the grid and move downwards until it reaches the first and highest available point, whereby it will commence hunting once again. 
+The repetition of this process allows for the rapid generation of complex mazes, which are guaranteed to be different each time. 
+A good resource to learn more about the Algorithm can be found [here](https://weblog.jamisbuck.org/2011/1/24/maze-generation-hunt-and-kill-algorithm). 
+Once I have the Maze Generation up and running in its most simplistic form, the goal will be to make it look as aesthetically pleasing as possible both while the maze is being generated, and while it is being explored. But the frills will come later, the first step is to create a Maze Generator. Or a GenaMaze.. 
