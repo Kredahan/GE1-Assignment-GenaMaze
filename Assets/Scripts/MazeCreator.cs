@@ -17,8 +17,8 @@ public class MazeCreator : MonoBehaviour
 
         InitializeMaze(); // Function found in this class that creates the default grid used to later make the maze
 
-       // HuntAndKillMaze ma = new HuntAndKillMaze(mazeCells); 
-        //ma.CreateMaze();
+       HuntAndKillMaze ma = new HuntAndKillMaze(mazeCells); 
+       ma.CreateMaze();
 
     }
 
