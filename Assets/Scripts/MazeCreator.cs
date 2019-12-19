@@ -17,8 +17,8 @@ public class MazeCreator : MonoBehaviour
 
         InitializeMaze(); // Function found in this class that creates the default grid used to later make the maze
 
-        HuntAndKillMaze ma = new HuntAndKillMaze(mazeCells); 
-        ma.CreateMaze();
+       // HuntAndKillMaze ma = new HuntAndKillMaze(mazeCells); 
+        //ma.CreateMaze();
 
     }
 
@@ -38,7 +38,6 @@ public class MazeCreator : MonoBehaviour
             {
                 mazeCells[r, c] = new MazeCell();
                 //wall[Random.Range(0, wall.Length)]
-                // For now use the same wall object for the floor
                 // mazeCells[r, c].floor = Instantiate(wall, new Vector3(r * size, -(size / 2f), c * size), Quaternion.identity) as GameObject;
                 mazeCells[r, c].floor = Instantiate(wall[0], new Vector3(r * size, -(size / 2f), c * size), Quaternion.identity) as GameObject;
                 mazeCells[r, c].floor.name = "Floor " + r + "," + c;
