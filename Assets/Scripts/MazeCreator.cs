@@ -19,6 +19,8 @@ public class MazeCreator : MonoBehaviour
 
        HuntAndKillMaze ma = new HuntAndKillMaze(mazeCells); 
        ma.CreateMaze();
+       Bird.clearFlags = CameraClearFlags.Depth;
+       Bird.rect = new Rect(0f, 0f, 0.3f, 0.3f);
 
     }
 
