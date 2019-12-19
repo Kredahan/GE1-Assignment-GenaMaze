@@ -262,9 +262,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13d889efc9dd2904791a6233be748e40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mazeRows: 0
-  mazeColumns: 0
-  wall: []
+  mazeRows: 12
+  mazeColumns: 6
+  wall:
+  - {fileID: 292011605}
+  - {fileID: 292011605}
+  - {fileID: 292011605}
+  - {fileID: 292011605}
+  - {fileID: 292011605}
+  - {fileID: 292011605}
   size: 2
   Bird: {fileID: 0}
 --- !u!4 &1160608528
